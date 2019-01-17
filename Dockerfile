@@ -24,6 +24,8 @@ RUN mkdir /workspace
 # Set Workdir
 WORKDIR /workspace
 RUN echo n | grails
+
+# Copy entrypoint script
 COPY src/entrypoint.sh /usr/local/bin/entrypoint.sh
 
 # Set Default Behavior
