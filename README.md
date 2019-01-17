@@ -2,7 +2,7 @@
 
 Docker image that bootstrap an environment for building old Grails 2.x.x application on OpenJDK 6. 
 
-This docker image was created to support an old legacy application that could not be upgraded to a newer version of Grails or even Java.
+This docker image was created to support an legacy application that could not be upgraded to a newer version of Grails or even Java.
 
 ## Technologies
 
