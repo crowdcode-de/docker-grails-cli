@@ -16,7 +16,7 @@ Image on dockerhub: [https://hub.docker.com/r/crowdcode/docker-grails](https://h
 Go to your grails application folder and start the grails interactive mode as follows:
 
 ```
-docker run -it --rm -v "$(pwd)":/workspace crowdcode/grails:2.1.1-openjdk6 grails
+docker run -it --rm -v "$(pwd)":/workspace crowdcode/grails grails
 ```
 
 Or to build a production war of your application
