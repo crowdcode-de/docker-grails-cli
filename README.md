@@ -4,6 +4,8 @@ Docker image that bootstrap an environment for building old Grails 2.x.x applica
 
 This docker image was created to support an legacy application that could not be upgraded to a newer version of Grails or even Java.
 
+Image on dockerhub: [https://hub.docker.com/r/crowdcode/docker-grails](https://hub.docker.com/r/crowdcode/docker-grails)
+
 ## Technologies
 
 - Grails 2.1.1
@@ -11,7 +13,7 @@ This docker image was created to support an legacy application that could not be
 
 ## How to use this image
 
-You can run grails interactive mode as follows:
+Go to your grails application folder and start the grails interactive mode as follows:
 
 ```
 docker run -it --rm -v "$(pwd)":/workspace crowdcode/grails:2.1.1-openjdk6 grails
