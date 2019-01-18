@@ -4,7 +4,7 @@ MAINTAINER CROWDCODE <develop@crowdcode.io>
 # Derived from mozart/grails by Manuel Ortiz Bey
 # Set customizable env vars defaults.
 # Set Grails version (max version for this Docker image is: 2.5.3).
-ARG GRAILS_VERSION=2.1.1
+ARG GRAILS_VERSION=2.2.1
 ENV GRAILS_VERSION ${GRAILS_VERSION}
 
 # Install Grails
