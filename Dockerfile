@@ -21,6 +21,9 @@ ENV PATH $GRAILS_HOME/bin:$PATH
 # Create Workspace Directory
 RUN mkdir /workspace
 
+# create folder for dependencies
+RUN mkdir /.grails && chmod 777 /.grails
+
 # Set Workdir
 WORKDIR /workspace
 RUN echo n | grails
