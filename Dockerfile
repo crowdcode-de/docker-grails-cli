@@ -5,6 +5,9 @@ MAINTAINER CROWDCODE <develop@crowdcode.io>
 # Set customizable env vars defaults.
 # Set Grails version (max version for this Docker image is: 2.5.3).
 ARG GRAILS_VERSION=2.1.1
+ARG USER_ID=1000
+ARG WORKSPACE_DIR="/workspace"
+
 ENV GRAILS_VERSION ${GRAILS_VERSION}
 
 # Install Grails
@@ -19,13 +22,15 @@ ENV GRAILS_HOME /usr/lib/jvm/grails
 ENV PATH $GRAILS_HOME/bin:$PATH
 
 # Create Workspace Directory
-RUN mkdir /workspace
+RUN mkdir $WORKSPACE_DIR
 
-# create folder for dependencies
-RUN mkdir /.grails && chmod 777 /.grails
+RUN useradd -ms /bin/bash  grailshome
 
 # Set Workdir
-WORKDIR /workspace
+WORKDIR $WORKSPACE_DIR
+
+USER ${USER_ID}
+
 RUN echo n | grails
 
 # Copy entrypoint script
@@ -34,4 +39,4 @@ COPY src/entrypoint.sh /usr/local/bin/entrypoint.sh
 # Set Default Behavior
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD ["bash"]
+USER ${USER_ID}
