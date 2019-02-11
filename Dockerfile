@@ -39,4 +39,4 @@ COPY src/entrypoint.sh /usr/local/bin/entrypoint.sh
 # Set Default Behavior
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD [“bash“]
+CMD ["bash"]
