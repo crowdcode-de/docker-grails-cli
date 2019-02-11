@@ -3,7 +3,9 @@
 Docker image for Grails 2.x CLI to use as build container. This image bootstraps an environment for building old Grails 2.x.x applications based on OpenJDK 6.
 This docker image was created to support an legacy application that could not be upgraded to a newer version of Grails or even Java Version, easely.
 
-Image on dockerhub: [https://hub.docker.com/r/crowdcode/docker-grails](https://hub.docker.com/r/crowdcode/docker-grails)
+Dockerfile on [https://github.com/crowdcode-de/docker-grails-cli](https://github.com/crowdcode-de/docker-grails-cli.git)
+
+Image on [https://hub.docker.com/r/crowdcode/grails-cli](https://hub.docker.com/r/crowdcode/grails-cli)
 
 ## Technologies
 
