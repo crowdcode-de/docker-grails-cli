@@ -9,7 +9,7 @@ Image on [https://hub.docker.com/r/crowdcode/grails-cli](https://hub.docker.com/
 
 ## Technologies
 
-- Grails 2.1.1
+- Grails 2.2.1
 - OpenJDK 6
 
 ## How to use this image
